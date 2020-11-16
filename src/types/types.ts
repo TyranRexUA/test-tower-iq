@@ -7,7 +7,6 @@ export interface userType {
 
 export interface stateType {
 	users: userType[],
-	isLoading: boolean
 }
 
 export interface getUsersAPIType {
