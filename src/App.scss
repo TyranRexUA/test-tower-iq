@@ -1,0 +1,9 @@
+.App {
+    text-align: center;
+    display: flex;
+
+    @media (max-width: 865px) {
+        flex-direction: column-reverse;
+    }
+}
+

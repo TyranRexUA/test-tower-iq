@@ -20,10 +20,10 @@ const UsersList: React.FC<mapStateToPropsType> = ({users}) => {
           return () => clearInterval(interval);
     }, [users.length, setRandomNumber])
 
-    console.log('random user with index in users[]', randomNumber)
-
     return (
         <div className={s.RandomUser}>
+            <h2>RANDOM USER</h2>
+
             {users.length > 0 
                 && users.filter((user, index) => index === randomNumber) // filter 1 users in page
                     .map(user => 

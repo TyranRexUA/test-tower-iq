@@ -1,0 +1,23 @@
+.Card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px 0px rgba(155, 155, 155, 0.5);
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+    background: white;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__fullName {
+        padding: 10px;
+        font-weight: 700;
+        border-bottom: 2px solid rgba(155, 155, 155, 0.2);
+        font-size: 1.25rem;
+    }
+
+    &__desc {
+        padding: 10px;
+    }
+}

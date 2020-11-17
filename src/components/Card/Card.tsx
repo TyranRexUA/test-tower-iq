@@ -9,11 +9,11 @@ interface propsType {
 const Card: React.FC<propsType> = ({fullName, desc}) => {
     return (
         <div className={s.Card}>
-            <div>
+            <div className={s.Card__fullName}>
                 {fullName}
             </div>
 
-            <div>
+            <div className={s.Card__desc}>
                 {desc}
             </div>
         

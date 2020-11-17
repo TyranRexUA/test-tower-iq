@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import RandomUser from './components/RandomUser/RandomUser';
 import UsersList from './components/UsersList/UsersList';
 

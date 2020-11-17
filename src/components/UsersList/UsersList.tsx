@@ -27,6 +27,8 @@ const UsersList: React.FC<mapStateToPropsType & mapDispatchToPropsType> = ({user
 
     return (
         <div className={s.List}>
+            <h2>ALL USERS</h2>
+
             {users.length > 0 
                 && users.filter((user, index) => index + 1 > (activePage - 1) *  pageSize && index + 1 <= activePage *  pageSize) // filter 5 users in page
                     .map(user => 

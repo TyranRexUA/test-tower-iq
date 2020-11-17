@@ -1,0 +1,17 @@
+.Paginator {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+
+    &__btn {
+        box-shadow: 0 0 7px 0px rgba(0, 0, 0, .2);
+        margin: 5px;
+        padding: 2px 7px;
+        border-radius: 2px;
+        background: rgba($color: white, $alpha: .7);
+        cursor: pointer;
+    }
+    &__activePage {
+        background: rgba(155, 155, 155, .6)
+    }
+}

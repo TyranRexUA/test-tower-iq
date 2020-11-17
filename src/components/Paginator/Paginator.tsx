@@ -15,7 +15,7 @@ const Paginator: React.FC<propsType> = ({ totalCount, pageSize, activePage, setA
         <div className={s.Paginator}>
             {pagesArray(totalCount, pageSize).map((number, index) => (
                 <div key={number}
-                    className={cn(s.Paginator__btn, {[s.activepage]: index + 1 === activePage})}
+                    className={cn(s.Paginator__btn, {[s.Paginator__activePage]: index + 1 === activePage})}
                     onClick={() => setActivePage(index + 1)}
                 >
                     {number}

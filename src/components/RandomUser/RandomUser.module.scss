@@ -1,0 +1,12 @@
+.RandomUser {
+    width: 20%;
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 865px) {
+        width: 100%;
+    }
+}
