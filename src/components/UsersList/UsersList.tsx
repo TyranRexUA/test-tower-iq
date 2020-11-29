@@ -15,7 +15,6 @@ interface mapDispatchToPropsType {
     requestUsers: () => void
 }
 
-// performance improvement
 const UsersList: React.FC<mapStateToPropsType & mapDispatchToPropsType> = ({users, requestUsers}) => {
     const pageSize: number = 5;
 
@@ -44,4 +43,4 @@ const mapStateToProps = (state: stateType): mapStateToPropsType => ({
     users: state.users,
 });
 
-export default connect<mapStateToPropsType, mapDispatchToPropsType, unknown, stateType>(mapStateToProps, { requestUsers })(memo(UsersList))
+export default connect<mapStateToPropsType, mapDispatchToPropsType, {}, stateType>(mapStateToProps, { requestUsers })(memo(UsersList))

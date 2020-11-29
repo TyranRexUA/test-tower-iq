@@ -37,4 +37,4 @@ const mapStateToProps = (state: stateType): mapStateToPropsType => ({
     users: state.users,
 });
 
-export default connect<mapStateToPropsType, unknown, unknown, stateType>(mapStateToProps, {  })(memo(UsersList))
+export default connect<mapStateToPropsType, {}, {}, stateType>(mapStateToProps, {  })(memo(UsersList))

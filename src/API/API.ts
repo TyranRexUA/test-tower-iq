@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { getUsersAPIType } from '../types/types';
+import { stateType } from '../types/types';
 
 const API = {
     getUsers() {
-        return axios.get<getUsersAPIType>('/users.json').then(response => response.data.users)
+        return axios.get<stateType>('/users.json').then(response => response.data.users)
     }
 }
 export default API;

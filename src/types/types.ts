@@ -8,7 +8,3 @@ export interface userType {
 export interface stateType {
 	users: userType[],
 }
-
-export interface getUsersAPIType {
-	users: userType[]
-}
