@@ -20,15 +20,16 @@ const UsersList: React.FC<mapStateToPropsType> = ({users}) => {
           return () => clearInterval(interval);
     }, [users.length, setRandomNumber])
 
+    let user = users.find((user, index) => index === randomNumber)
+
     return (
         <div className={s.RandomUser}>
             <h2>RANDOM USER</h2>
 
-            {users.length > 0 
-                && users.filter((user, index) => index === randomNumber) // filter 1 users in page
-                    .map(user => 
-                        (<Card key={user.id} fullName={`${user.name} ${user.surname}`} desc={user.desc}/>) // show this user
-                    )}
+            {user &&
+                <Card key={user.id} fullName={`${user.name} ${user.surname}`} desc={user.desc}/>
+            }
+
         </div>
     );
 }
